@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(18,135,74,0.8240546218487395) 75%);
+}
+
+div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.middle {
+    width: 50%;
+    margin-top: 10%;
+}
+
+div.row {
+    padding: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(26,252,135,0.8240546218487395) 75%);
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+div.middle input {
+    background-color: white;
+    width: 80%;
+    height: 35px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+div.middle input:focus {
+    outline: none;
+}
+
+div.middle button {
+    width: 18%;
+    margin-left: 10px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: rgba(26,252,135,0.8240546218487395);
+    color: white;
+}
+
+div.middle button:hover {
+    background-color: white;
+    color: rgba(26,252,135,0.8240546218487395);
+}
+
+div.todos {
+    width: 50%;
+    margin-top: 4%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(26,252,135,0.8240546218487395) 75%);
+    opacity: 0.8;
+    padding: 0px 5px 0px 5px;
+    border-radius: 4px;
+}
+
+div.todo {
+    background: white;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.todo i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+div.todo i.check:hover {
+    color: green;
+}
+
+div.todo i.delete:hover {
+    color: red;
+}
