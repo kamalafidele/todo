@@ -18,7 +18,7 @@ const Todo = () => {
         setText('');
     }
 
-    const handleComplete = (todoId) => {
+    const completeTodo = (todoId) => {
         todos.forEach((todo) => {
             if (todo._id === todoId) todo.isCompleted = true;
         });
@@ -45,7 +45,7 @@ const Todo = () => {
                         <div key={index} className='todo' style={{ borderLeft: todo.isCompleted ? '7px solid green' : '7px solid red' }}>
                             <p>{todo.description}</p>
                             <di className="icons">
-                                <i className="fa fa-check check" aria-hidden="true" onClick={() => handleComplete(todo._id)}></i>
+                                <i className="fa fa-check check" aria-hidden="true" onClick={() => completeTodo(todo._id)}></i>
                                 <i className="fa fa-trash delete" aria-hidden="true" onClick={() => deleteTodo(todo._id)}></i>
                             </di>
                         </div>)
